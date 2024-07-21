@@ -1,0 +1,271 @@
+/* Media Queries for Responsive Design */
+@media (max-width: 1240px) {
+
+}
+
+
+@media (max-width: 1239px) {
+  .foto{
+    width: 100%;
+  }
+  .album-row {
+      flex-direction: column; /* Mengubah arah flex menjadi kolom untuk perangkat dengan lebar kurang dari 1239px */
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .col-4, .col-8, .col-6 {
+    width: 100%; /* Membuat kolom mengambil lebar penuh */
+    height: 400px; /* Menetapkan tinggi yang sama untuk semua gambar, Anda bisa menyesuaikan sesuai kebutuhan */
+    margin: 10px 0; /* Menambahkan margin vertikal untuk jarak antar elemen */
+  }
+  .col-6{
+    width: 120%;
+    display: flex;
+    justify-content: center;
+  }
+  .col{
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+  .album img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+  }
+
+  .album-row2 {
+      flex-direction: column; /* Mengatur ulang album-row2 menjadi kolom */
+      width: 100%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+  }
+  .album-row2 .col-6 {
+    width: 100%; /* Membuat kolom 6 mengambil lebar penuh */
+    height: 400px; /* Atur tinggi gambar jika diperlukan */
+}
+}
+@media (max-width: 1170px){
+  .date-container1{
+    width: 50%;
+    display: flex;
+  }
+  .date-container2{
+    width: 50%;
+    display: block;
+  }
+  /* popup */
+  .popup {
+    width: 66%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .popup-row img{
+    width: 56%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* start */
+  .start-container1, .start-container2{
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+  .start-container1{
+    position: absolute;
+    z-index: -1;
+  }
+  .start-container2{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0); /* Atur latar belakang jika diperlukan */
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50%;
+  }
+  .start-container2 h4{
+    font-size: 68px;
+  }
+  .start-container2 h6{
+    font-size: 48px;
+  }
+  .start-container2 button{
+    background-color: rgba(122, 122, 122, 0.178);
+
+  }
+    /* date */
+  .date-container1, .date-container2 {
+      width: 100%;
+      height: auto;
+      max-height: none;
+  }
+
+  .date-container1 {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.5; /* Atur transparansi jika diperlukan */
+  }
+
+  .date-container2 {
+    width: 100%;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0); /* Atur latar belakang jika diperlukan */
+      padding-bottom: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .date-text h4 {
+      font-size: 24px;
+  }
+
+  .date-text h3 {
+      font-size: 32px;
+  }
+
+  .date-row h5 {
+      font-size: 24px;
+  }
+
+  .date-row h4 {
+      font-size: 14px;
+  }
+  .start-column, .date-column, .wedding-column {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+  }
+  .date-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Mengatur jarak antar elemen */
+  }
+
+  .date-column, .date-column1 {
+      margin: 0; /* Menghapus margin */
+      padding: 0; /* Menghapus padding */
+  }
+  .date-column1{
+    width: 40%;
+    position: relative;
+    right: 30%;
+    text-align: start;
+  }
+
+  .line {
+      margin: 0 10px;
+      position: relative;
+      padding: 0;
+      right: 30%;
+      align-items: center;
+      bottom: 10%;
+  }
+
+  .date {
+      margin: 0; /* Menghapus margin */
+      padding: 0; /* Menghapus padding */
+      text-align: center; /* Memusatkan teks */
+  }
+
+  .date-column h1, .date-column h2 {
+      margin: 0; /* Menghapus margin */
+      padding: 0; /* Menghapus padding */
+  }
+
+  .date-column1, .date-row {
+      margin-left: 0;
+      justify-content: center;
+  }
+  /* pesan */
+  .scrolling-container .item {
+    flex: 0 0 50%; /* Set item width to 50% to display two items per row */
+    max-width: 80%;
+    min-width: 70%;
+  }
+  .scrolling-box{
+    left: 10%;
+    width: 90%;
+    padding: 20px;
+  }
+  /* popup */
+  .popup{
+    width: 55%;
+    padding: 10px;
+  }
+  .popup-row {
+    height: 30%;
+      display: flex; /* Pastikan elemen diatur secara horizontal */
+      justify-content: flex-start; /* Atur konten ke posisi awal */
+      gap: 5%;
+      flex-direction: column;
+      padding-top: 5px;
+  }
+  .popup-column-bawah{
+    right: 2.5%;
+  }
+  
+}
+@media (max-width: 676px){
+  /* instagram */
+  .instagram-row{
+    flex-direction: column;
+  }
+  .instagram-column{
+    width: 30%;
+    height: auto;
+  }
+  .instagram{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .instagram-column img{
+    width: 70%;
+    height: auto;
+  }
+  /* wedding */
+  .wedding-row{
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    top: 20%;
+    padding-bottom: 10%;
+  }
+  .wedding{
+    width: 100%;
+  }
+  .wedding-column{}
+}
+@media (max-width: 400px){
+  .scrolling-box{
+    width: 100%;
+    left: 5%;
+  }
+  .scrolling-box h5{
+    font-size: 12px;
+  }
+  .scrolling-box h4{
+    font-size: 20px;
+  }
+  .scrolling-container .item{
+    width: 100%;
+    flex: 0 0 50%;
+    min-width: 90%;
+  }
+}

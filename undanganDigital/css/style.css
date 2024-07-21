@@ -1,0 +1,883 @@
+@font-face {
+    font-family: Italianno;
+    src: url("../font/Italianno-Regular.ttf");
+  }
+
+body {
+    font-family: "Alice", serif;
+    color: black;
+    background-color: black;
+    overflow-x: hidden; /* Hide vertical scrollbar *
+        /* overflow: hidden; Hide scrollbars */
+        
+  }
+.wrapper {
+font-size: 10px;
+}
+/* start */
+.start-container1{
+    width: 65%;
+    height: auto;
+    max-height: 650px;
+    display: flex;
+    background-color: rgb(226, 217, 217);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.start-container1 img{
+    flex: 1;
+    object-fit: cover;
+}
+.start-container2{
+    width: 35%;
+    height: 650px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Memusatkan secara horizontal */
+    justify-content: center;
+}
+.start-container2 h4{
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Italianno", serif;
+    font-size: 48px;
+}
+.start-container2 h6{
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Italianno", serif;
+    font-size: 32px;   
+}
+.start-container2 button{
+    margin-top: 4%;
+    border-radius: 10px;
+    font-family: "Prata",serif;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    color: white;
+
+}
+
+/* date */
+.date{
+    width: 100%;
+}
+.row{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.date-container1 {
+    width: 65%;
+    height: auto;
+    max-height: 650px;
+    display: flex;
+    background-color: rgb(226, 217, 217);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.date-container1 img {
+    width: 100%;
+    height: auto;
+    flex: 1;
+    object-fit: cover;
+}
+.date-container2 {
+    width: 35%;
+    height: 650px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Memusatkan secara horizontal */
+}
+.top-right, .bottom-left {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    display: flex;
+}
+.top-right {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1) scaleY(-1);
+}
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+.top-right img, .bottom-left img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+.date-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0; /* Menghapus margin kiri */
+}
+.date-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.date-text {
+    margin: 50px 0;
+    text-align: center; /* Memusatkan teks */
+}
+.date-text h4, .date-text h3 {
+    font-family: "Italianno", serif;
+}
+.date-text h4 {
+    color: #AFB6A7;
+    font-size: 40px;
+}
+.date-text h3 {
+    color: white;
+    font-size: 58px;
+}
+.date {
+    text-align: center;
+}
+.date h6 {
+    color: white;
+}
+.date h5 {
+    color: white;
+    font-size: 38px;
+}
+.date h3 {
+    color: #6EAF3A;
+    font-size: 28px;
+}
+.date h4 {
+    color: white;
+    font-size: 16px;
+}
+.date-column h1, .date-column h2 {
+    text-align: center;
+}
+.date-column h1 {
+    color: white;
+    font-size: 14px;
+}
+.date-column h2 {
+    color: #6EAF3A;
+    font-size: 38px;
+}
+.date button {
+    margin-top: 4%;
+    border-radius: 10px;
+    font-family: "Prata", serif;
+    font-size: 1em;
+    width: 90px;
+    color: white;
+}
+.date button:hover {
+    background-color: #222E1D;
+    color: white;
+}
+.line {
+    width: 2px;
+    height: 50px;
+}
+.ornamen-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    width: 100px;
+}
+/* wedding */
+.wedding {
+    background-color: #11160D;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+.wedding-row2{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+}
+
+
+.wedding-img-kiri {
+    width: 15%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wedding-img-kanan {
+    width: 15%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.balik {
+    transform: scaleX(-1);
+}
+
+.wedding-text {
+    flex: 1;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    align-items: center;
+    flex: 1;
+
+}
+
+.wedding-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    top: 100px;
+    position: relative;
+    flex: 1;
+    width: 60%;
+    z-index: 1;
+    padding-bottom: 25%;
+}
+
+.column button {
+    background-color: black;
+    width: 90px;
+    height: 35px;
+    border-radius: 30%;
+}
+
+.wedding-row h4 {
+    font-family: "Italianno", serif;
+    font-size: 64px;
+    text-align: center;
+    
+}
+
+.bottom-wedding {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bottom-wedding img {
+    object-fit: cover;
+    width: 100%;
+}
+.wedding-column{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.wedding-column h4{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    position: relative;
+}
+.wedding-column h5{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.ornamen-tengah img{
+    display: flex;
+    width: 50%;
+    min-width: 120px;
+    height: auto;
+    position: absolute;
+    align-items: center;
+    top: 60%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    z-index: -1;
+
+}
+/* instagran */
+.instagram{
+    width: 100%;
+    height: 500px;
+    background-color: #0F100F;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction:column ;
+    
+}
+.instagram h4{
+    color: white;
+    text-align: center;
+}
+.instagram h3{
+    color: #AE8686;
+    text-align: center;
+}
+.instagram-image{
+    width: 50%;
+    height: 50%;
+}
+.instagram-row{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.instagram-column{
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.instagram-barcode{
+    height: 60%;
+    border-radius: 5%;
+}
+.instagram button{
+    justify-items: end;
+    border-color: #7D5260;
+    color: #FFD8E4;
+    margin-top: 4%;
+    border-radius: 10px;
+    font-family: "Prata",serif;
+    font-size: 1em;
+    width: 120px;
+    height: 35px;
+}
+
+/* album */
+.album{
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 30px;
+    position: relative;
+}
+.foto{
+    width: 1300px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album-row{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.album-row img{
+    display: flex;
+    position: relative;
+    
+}
+.album-column{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.album-row2{
+    padding-bottom: 30px;
+    padding-right: 20px;
+    display: flex;
+}
+.album-row2 img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+.col-4, .col-8, .col-6 {
+    padding: 5px;
+}
+
+.col-4 {
+    display: flex;
+    width: 33.33%;
+}
+
+.col-8 {
+    display: flex;
+    width: 66.66%;
+}
+
+.col-6 {
+    display: flex;
+    width: 50%;
+}
+
+/* gift */
+.gift{
+    display: flex;
+    width: 100%;
+    background-color: #11160D;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.gift-row{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    display: flex;
+}
+.gift-row button{
+    text-align: center;
+}
+.gift-column{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    position: relative;
+}
+.gift-column h3{
+    color: #6EAF3A;
+    text-align: center;
+    font-size: 32px;
+}
+.gift-column h4{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.gift-column img{
+    align-items: center;
+    width: 35%;
+    height: auto;
+    display: flex;
+    position: relative;
+    padding: 3%;
+    transform: scaleZ(1)
+}
+.gift-column button{
+    background-color: #D8D2BA;
+    color: black;
+    border-radius: 10px;
+    font-family: "Prata",serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+}
+.gift-container{
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex: 1;
+}
+.gift-container label{
+    color: #6EAF3A;
+    font-size: 24px;
+}
+.mb-3 label{
+    color: #6EAF3A;
+    font-size: 20px;
+}
+.gift-container button{
+    background-color: #D8D2BA;
+    color: black;
+    border-radius: 10px;
+    font-family: "Prata",serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+}
+.gift .kiri{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: auto;
+    top: 0;
+    display: flex;
+}
+.gift .kanan{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: auto;
+    transform: scaleX(-1) ;
+    z-index: -1;
+    display: flex;
+}
+.scrolling-container{
+    display: flex;
+    overflow-x:auto ;
+    width: auto;
+    padding: 10px;
+    max-width: 80%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.scrolling-box{
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5%;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    align-items: center;
+    left: 5%;
+    padding: 20px;
+    
+}
+.scrolling-box h4{
+    font-size: 24px;
+}
+.scrolling-box h5{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* footer */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    position: relative;
+    display: flex;
+    z-index: 22;
+}
+.footer-ornamen-kanan{
+    width: 35%;
+    height: auto;
+    transform: scaleX(-1) ;
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.footer-ornamen-kiri{
+    width: 35%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.footer-row{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.footer-text{
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+.footer-text h2{
+    color: white;
+    font-family: "Italianno", serif;
+    font-size: 64px;
+}
+.footer-text h3{
+    color: white;
+    font-size: 28px;
+}
+.footer-text h4{
+    color: white;
+    font-size: 20px;
+}
+/* gift popup */
+.popup {
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.popup span{
+    position: relative;
+    right: 50%;
+    bottom: 50%;
+    height: auto;
+    
+}
+.popup-show {
+    display: block;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.overlay-show {
+    display: block;
+}
+.close-overlay {
+    cursor: pointer;
+    color: #333;
+    float: right;
+    font-size: 20px;
+}
+.popup-column{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+}
+.popup-column h4{
+    font-size: 20px;
+}
+.popup-container{
+    position: relative;
+    top: 10px;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    background-color: #CADDCE;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    left: 10px;
+}
+.popup-container h4{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+.popup-column-bawah{
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.popup-row{
+    margin: 10px;
+    padding: auto;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.popup-row img{
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+.popup-row h4{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popup-row h5{
+    text-align: center;
+    font-size: 18px;
+}
+.popup-column-bawah button{
+    background-color: #785327;
+    color: white;
+    border-radius: 10px;
+    font-family: "Prata",serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+}
+.popup-column-bawah button:hover{
+    background-color: #cab69e;
+}
+/* navigasi mengambang */
+.floating-nav {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bagian bawah layar */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.nav-button {
+    background-color: #11160d; /* Warna tombol */
+    color: white; /* Warna teks */
+    border: none;
+    padding:20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #6EAF3A; /* Warna tombol saat hover */
+}
+.floating-music {
+    position: fixed;
+    bottom: 30%; /* Jarak dari bagian bawah layar */
+    right: 1%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 1000;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.music-btn {
+    background-color: transparent; /* Warna latar belakang tombol */
+    color: white; /* Warna teks */
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-image 0.5s; /* Transisi untuk perubahan gambar latar belakang */
+    animation: rotate 2s linear infinite; /* Animasi putar */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M14 10h-2v12h2zm6 0h-2v12h2z'/%3E%3Cpath fill='white' d='M16 4A12 12 0 1 1 4 16A12 12 0 0 1 16 4m0-2a14 14 0 1 0 14 14A14 14 0 0 0 16 2'/%3E%3C/svg%3E"); /* Gambar latar belakang tombol */
+    background-size: cover;
+}
+
+.music-btn.paused {
+    animation-play-state: paused; /* Hentikan animasi saat dijeda */
+}
+
+.music-btn:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M14 10h-2v12h2zm6 0h-2v12h2z'/%3E%3Cpath fill='white' d='M16 4A12 12 0 1 1 4 16A12 12 0 0 1 16 4m0-2a14 14 0 1 0 14 14A14 14 0 0 0 16 2'/%3E%3C/svg%3E"); /* Gambar latar belakang saat hover */
+}
+/* animasi */
+.animation-container {/* Sesuaikan ukuran sesuai animasi */
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(-50% -50%);
+    z-index: 1;
+    background-color: transparent;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
